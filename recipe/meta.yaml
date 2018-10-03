@@ -1,15 +1,12 @@
-{% set name = "alsa-lib" %}
 {% set version = "1.1.5" %}
-{% set sha256 = "f4f68ad3c6da36b0b5241ac3c798a7a71e0e97d51f972e9f723b3f20a9650ae6" %}
 
 package:
-  name: {{ name|lower }}
+  name: alsa-lib
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.bz2
-  url: ftp://ftp.alsa-project.org/pub/lib/{{ name }}-{{ version }}.tar.bz2
-  sha256: {{ sha256 }}
+  url: ftp://ftp.alsa-project.org/pub/lib/alsa-lib-{{ version }}.tar.bz2
+  sha256: f4f68ad3c6da36b0b5241ac3c798a7a71e0e97d51f972e9f723b3f20a9650ae6
 
 build:
   number: 1000
@@ -17,14 +14,13 @@ build:
 
 requirements:
   build:
-    - toolchain
     - make
     - autoconf
     - automake
-    - gcc
     - libtool
+    - {{ compiler('c') }}
+  host:
   run:
-    - libgcc
 
 test:
   commands:
@@ -40,3 +36,4 @@ about:
 extra:
   recipe-maintainers:
     - scopatz
+    - ocefpaf
