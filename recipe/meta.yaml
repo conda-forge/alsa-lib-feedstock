@@ -9,7 +9,7 @@ source:
   sha256: f4f68ad3c6da36b0b5241ac3c798a7a71e0e97d51f972e9f723b3f20a9650ae6
 
 build:
-  number: 1001
+  number: 1002
   skip: True  # [not linux]
   run_exports:
     # https://abi-laboratory.pro/?view=timeline&l=alsa
