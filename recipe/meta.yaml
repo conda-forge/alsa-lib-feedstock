@@ -1,4 +1,4 @@
-{% set version = "1.1.5" %}
+{% set version = "1.2.3" %}
 
 package:
   name: alsa-lib
@@ -6,10 +6,10 @@ package:
 
 source:
   url: ftp://ftp.alsa-project.org/pub/lib/alsa-lib-{{ version }}.tar.bz2
-  sha256: f4f68ad3c6da36b0b5241ac3c798a7a71e0e97d51f972e9f723b3f20a9650ae6
+  sha256: 02f00922fc511eaf37b037197afa930d5ff0912c1a86f333393f91f3426f678e
 
 build:
-  number: 1002
+  number: 0
   skip: True  # [not linux]
   run_exports:
     # https://abi-laboratory.pro/?view=timeline&l=alsa
@@ -31,7 +31,7 @@ test:
 
 about:
   home: http://www.alsa-project.org/main/index.php/Main_Page
-  license: LGPL v2.1
+  license: LGPL-2.1-or-later
   license_family: GPL
   license_file: COPYING
   summary: 'Advanced Linux Sound Architecture'
