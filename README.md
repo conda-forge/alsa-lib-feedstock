@@ -3,7 +3,7 @@ About alsa-lib
 
 Home: http://www.alsa-project.org/main/index.php/Main_Page
 
-Package license: LGPL v2.1
+Package license: LGPL-2.1-or-later
 
 Feedstock license: BSD 3-Clause
 
@@ -26,7 +26,7 @@ Current build status
     <td>Drone</td>
     <td>
       <a href="https://cloud.drone.io/conda-forge/alsa-lib-feedstock">
-        <img alt="linux" src="https://img.shields.io/drone/build/conda-forge/master.svg?label=Linux">
+        <img alt="linux" src="https://img.shields.io/drone/build/conda-forge/alsa-lib-feedstock/master.svg?label=Linux">
       </a>
     </td>
   </tr>
