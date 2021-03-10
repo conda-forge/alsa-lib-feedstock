@@ -21,6 +21,7 @@ requirements:
     - autoconf
     - automake
     - libtool
+    - gnuconfig  # [unix]
     - {{ compiler('c') }}
   host:
   run:
