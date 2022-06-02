@@ -1,4 +1,4 @@
-{% set version = "1.2.6.1" %}
+{% set version = "1.2.7" %}
 
 package:
   name: alsa-lib
@@ -6,11 +6,11 @@ package:
 
 source:
   url: https://github.com/alsa-project/alsa-lib/archive/v{{ version }}.tar.gz
-  sha256: d9df0020b1eb07470d9b9afa6d4d5c3cc864c7d611e54e80f8f42fcde7b3ac26
+  sha256: d76ac42f678b198d754c072fb6d0ce89f880a9bb9fd6a45f97d7be762ac0a384
 
 build:
   number: 0
-  skip: True  # [not linux]
+  skip: true  # [not linux]
   run_exports:
     # https://abi-laboratory.pro/?view=timeline&l=alsa
     - {{ pin_subpackage("alsa-lib", max_pin="x.x.x") }}
@@ -34,7 +34,7 @@ about:
   license: LGPL-2.1-or-later
   license_family: GPL
   license_file: COPYING
-  summary: 'Advanced Linux Sound Architecture'
+  summary: Advanced Linux Sound Architecture
 
 extra:
   recipe-maintainers:
