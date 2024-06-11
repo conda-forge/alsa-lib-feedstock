@@ -1,4 +1,4 @@
-{% set version = "1.2.11" %}
+{% set version = "1.2.12" %}
 
 package:
   name: alsa-lib
@@ -6,10 +6,10 @@ package:
 
 source:
   url: https://github.com/alsa-project/alsa-lib/archive/v{{ version }}.tar.gz
-  sha256: 12216f0730d6dde3ded6a2a5388bc0009ad07f5c65972bd89aac9a76f8f085a4
+  sha256: f067dbba9376e5bbbb417b77751d2a9f2f277c54fb3a2b5c023cc2c7dfb4e3c1
 
 build:
-  number: 1
+  number: 0
   skip: true  # [not linux]
   run_exports:
     # https://abi-laboratory.pro/?view=timeline&l=alsa
@@ -24,6 +24,7 @@ requirements:
     - automake
     - libtool
     - {{ compiler('c') }}
+    - {{ stdlib("c") }}
   host:
   run:
 
