@@ -1,4 +1,4 @@
-{% set version = "1.2.14" %}
+{% set version = "1.2.15.1" %}
 
 package:
   name: alsa-lib
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/alsa-project/alsa-lib/archive/v{{ version }}.tar.gz
-  sha256: a7bc6c09f0e5a622ebc8afb63a194aa1396145b5c6433d3445363201d96c23c4
+  sha256: 28a2364aa9d7e32b5236112afc7b1dcac1e20ffa67b23a259f9252ebfda11b7b
 
 build:
   number: 0
